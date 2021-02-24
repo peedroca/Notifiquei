@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifiquei.Desktop", "Notifiquei.Desktop\Notifiquei.Desktop.csproj", "{2E6D4FAB-AB9E-4F1A-81B8-EC5FC24C9A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notifiquei.DesktopCLI", "Notifiquei.DesktopCLI\Notifiquei.DesktopCLI.csproj", "{76846967-81B2-436B-AFF5-C5F1DD903EA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E6D4FAB-AB9E-4F1A-81B8-EC5FC24C9A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6D4FAB-AB9E-4F1A-81B8-EC5FC24C9A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6D4FAB-AB9E-4F1A-81B8-EC5FC24C9A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6D4FAB-AB9E-4F1A-81B8-EC5FC24C9A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76846967-81B2-436B-AFF5-C5F1DD903EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76846967-81B2-436B-AFF5-C5F1DD903EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76846967-81B2-436B-AFF5-C5F1DD903EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76846967-81B2-436B-AFF5-C5F1DD903EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9C5A688-FEF1-4966-8EA6-2F23D9C18F60}
+	EndGlobalSection
+EndGlobal
