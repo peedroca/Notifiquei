@@ -13,11 +13,14 @@ namespace NotifiqueiPack.Models
         /// </summary>
         /// <param name="credentialPath">Localização do arquivo de credenciais</param>
         /// <param name="applicationName">Nome da aplicação (O mesmo que o configurado no FCM API)</param>
+        /// <param name="projectId">Identificação do projeto</param>
         public NotifiqueiSettings(string credentialPath
-            , string applicationName)
+            , string applicationName
+            , string projectId)
         {
             CredentialPath = credentialPath;
             ApplicationName = applicationName;
+            ProjectId = projectId;
 
             AddNotifications(new Contract<Notification>()
                 .Requires()
@@ -34,5 +37,10 @@ namespace NotifiqueiPack.Models
         /// Nome da aplicação (O mesmo que o configurado no FCM API)
         /// </summary>
         public string ApplicationName { get; private set; }
+
+        /// <summary>
+        /// Identificação do projeto
+        /// </summary>
+        public string ProjectId { get; private set; }
     }
 }
