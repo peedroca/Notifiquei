@@ -23,7 +23,8 @@ namespace Notifiquei.DesktopCLI
 
         private static List<Tuple<string, string>> _tokens = new List<Tuple<string, string>>()
         {
-            new Tuple<string, string>("ePedro", "fIqHV5_UT5W-m21wiVYK4Y:APA91bHx7I35GCj3dD1krzseQxwZRVHEV44LzQ6BThNYaT0L8dKEG-UgjwPnPAaSdjOmrpOPErSqye189nh_ROPWA2kVgnlCXKYRSusrxEwYY_mnwnHvdsz57hXxkn10_lnHAmqUcKyE"),
+            //new Tuple<string, string>("ePedro", "fIqHV5_UT5W-m21wiVYK4Y:APA91bHx7I35GCj3dD1krzseQxwZRVHEV44LzQ6BThNYaT0L8dKEG-UgjwPnPAaSdjOmrpOPErSqye189nh_ROPWA2kVgnlCXKYRSusrxEwYY_mnwnHvdsz57hXxkn10_lnHAmqUcKyE"),
+            new Tuple<string, string>("eLucas", "fkBcY9abS-2Y2MQMVhZbjP:APA91bHkq3QJtybm1-NaBoYTyHMY4foIN95V3Zaa69sWP3dW8B04p0LFn57FuYSSPX2Tes591d7rwP15RGejBkHTU0Axigw1WNnPnh0kHea_LjjxpKRhd8f3BzMpED7LtlPysnz3ewNx"),
             //new Tuple<string, string>("Pedro", "d5fM2JdiQKegzljyooTbU2:APA91bFKnpoxdkzlYI1pKwgnTrmAcdXUuhCA5EJlI02nRQPodV2fBb_4FPdHV93kgHLF6Zjbs6NuLeZ2IjyzrOPTM_-_ARV-nLMyI5flOo77x5ezhd_zubhaTcC-ttlmYeiMm12Sm_fr"),
             //new Tuple<string, string>("Lucas", "fEOSs7RLQ6K-3bf1hpD8Os:APA91bHTQNR5issXGW7llakzoaVmVTO0FnNFz9VvdzF4WkLp0hHY5OTebPdKp5QQykKBCrQMatXWTX6-XArZ_gJ3mYMS5vrdDNSq1gvogFGWWZ9LQmkal1Okcj3citpdlVIGRBCzvoZ-"),
             //new Tuple<string, string>("Felipe", "eUe1maZqT9-gldldOoM_oe:APA91bF98BDML242sSB_-zgMfW-3EHABL2acFgsZLGLDVHp5zO_8Ujay7-anGh5Qy7G0Sh1DJGk7tVo48yPGbhGycIT3uBJFLb9p8Ff7pAK2dweJqSp0G6-cuqR7MRJq3XLUCyaQZGQU"),
@@ -34,7 +35,7 @@ namespace Notifiquei.DesktopCLI
         static void Main(string[] args)
         {
             _notifiqueiService = new NotifiqueiService();
-            _notifiqueiResult = _notifiqueiService.Initialize(new NotifiqueiSettings("credentials.json", "NotifiqueiDesktop"));
+            _notifiqueiResult = _notifiqueiService.Initialize(new NotifiqueiSettings(@"c:\credentials-homologacao.json", "NotifiqueiDesktop"));
 
             if (!_notifiqueiResult.Success)
             {
@@ -43,10 +44,10 @@ namespace Notifiquei.DesktopCLI
                 return;
             }
 
-            //SendWithToken();
+            SendWithToken();
             //SendWithTopic();
 
-            _notifiqueiResult = _notifiqueiService.GetFeatures();
+            //_notifiqueiResult = _notifiqueiService.GetFeatures();
 
             if (!_notifiqueiResult.Success)
             {

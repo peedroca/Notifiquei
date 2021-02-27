@@ -24,6 +24,8 @@ namespace Notifiquei.Mobile.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            AppContainer.Container = new AutoFacSetup().CreateContainer();
+
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -32,7 +34,7 @@ namespace Notifiquei.Mobile.Droid
             CreateNotificationChannel();
             IsPlayServicesAvailable();
 
-            LoadApplication(new App(FirebaseInstanceId.Instance.Token));
+            LoadApplication(new App());
         }
 
         public bool IsPlayServicesAvailable()

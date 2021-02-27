@@ -6,11 +6,11 @@ namespace Notifiquei.Mobile
 {
     public partial class App : Application
     {
-        public App(string token)
+        public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage(token);
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

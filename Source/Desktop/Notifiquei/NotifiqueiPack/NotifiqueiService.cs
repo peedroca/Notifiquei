@@ -125,7 +125,7 @@ namespace NotifiqueiPack
                 var result = NotifiqueiSetup.MessagingService
                     .Projects
                     .Messages
-                    .Send(message, "projects/693852249198");
+                    .Send(message, "projects/873701159617");
 
                 results.Add(result.Execute().Name);
             }
